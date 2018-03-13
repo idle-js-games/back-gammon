@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="backgammon.css">
+    <link rel="stylesheet" href="dice.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="board">
+            <div class="chamber W">
+                <div class="cell top">
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+                        </div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+                        </div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+                        </div>
+                    </div>
+                </div>
+                <div class="roll W">
+                    <div class="roll-button">Roll</div>
+                    <div class="dices">
+                        <div class="dice one">
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell bottom">
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+
+                        </div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="bar-B">
+                </div>
+                <div class="bar-W">
+                </div>
+            </div>
+            <div class="chamber B">
+                <div class="cell top">
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+                        </div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                </div>
+                <div class="roll B">
+                    <div class="roll-button">Roll</div>
+                    <div class="dices">
+                    </div>
+                </div>
+                <div class="cell bottom">
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers">
+                        </div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                    <div class="point">
+                        <div class="triangle"></div>
+                        <div class="checkers"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bear-off">
+            <div class="bear-off-W"></div>
+            <div class="bear-off-B"></div>
+        </div>
+    </div>
+    <script src="backgammon.js"></script>
+    <script src="bot.js"></script>
+    <script>
+        let combo = new Combinatorics()
+        let backgammon = new Backgammon(document.querySelectorAll('.point'))
+        let cpu = new Bot(combo, backgammon)
+        
+        backgammon.init()
+    </script>
+</body>
+<script>
+
+</script>
+
+</html>
