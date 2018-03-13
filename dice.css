@@ -1,0 +1,127 @@
+
+.dice {
+    box-shadow: 0px 0px 12px 2px black;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.dot {
+    border-radius: 50%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.dice.one .dot:nth-child(1) {
+    top: calc(50% - 10px / 2);
+    left: calc(50% - 10px / 2);
+}
+
+.dice.two .dot:nth-child(1) {
+    top: 5px;
+    right: 5px;
+}
+
+.dice.two .dot:nth-child(2) {
+    left: 5px;
+    bottom: 5px;
+}
+
+.dice.three .dot:nth-child(1) {
+    top: 5px;
+    right: 5px;
+}
+
+.dice.three .dot:nth-child(2) {
+    top: calc(50% - 10px / 2);
+    left: calc(50% - 10px / 2);
+}
+
+.dice.three .dot:nth-child(3) {
+    left: 5px;
+    bottom: 5px;
+}
+
+.dice.four .dot:nth-child(1) {
+    left: 5px;
+    top: 5px;
+}
+
+.dice.four .dot:nth-child(2) {
+    right: 5px;
+    top: 5px;
+}
+
+.dice.four .dot:nth-child(3) {
+    left: 5px;
+    bottom: 5px;
+}
+
+.dice.four .dot:nth-child(4) {
+    right: 5px;
+    bottom: 5px;
+}
+
+.dice.five .dot:nth-child(1) {
+    left: 5px;
+    top: 5px;
+}
+
+.dice.five .dot:nth-child(2) {
+    right: 5px;
+    top: 5px;
+}
+
+.dice.five .dot:nth-child(3) {
+    left: 5px;
+    bottom: 5px;
+}
+
+.dice.five .dot:nth-child(4) {
+    right: 5px;
+    bottom: 5px;
+}
+
+.dice.five .dot:nth-child(5) {
+    top: calc(50% - 10px / 2);
+    left: calc(50% - 10px / 2);
+}
+
+
+.dice.six .dot:nth-child(1) {
+    left: 5px;
+    top: 5px;
+}
+
+.dice.six .dot:nth-child(2) {
+    right: 5px;
+    top: 5px;
+}
+
+.dice.six .dot:nth-child(3) {
+    left: 5px;
+    bottom: 5px;
+}
+
+.dice.six .dot:nth-child(4) {
+    right: 5px;
+    bottom: 5px;
+}
+
+.dice.six .dot:nth-child(5) {
+    top: calc(50% - 10px / 2);
+    left: 5px;
+}
+
+.dice.six .dot:nth-child(6) {
+    top: calc(50% - 10px / 2);
+    right: 5px;
+}
+
